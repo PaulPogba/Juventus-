@@ -1,0 +1,10 @@
+target 'AiJiaBao' do
+	use_frameworks!
+	pod 'AFNetworking' 
+	pod 'Masonry'
+	pod 'MBProgressHUD'
+	pod 'SDWebImage'
+	pod 'MJExtension'
+	pod 'MJRefresh'
+	pod 'AliyunOSSiOS', '~> 2.6.0'
+end 

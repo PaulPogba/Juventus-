@@ -1,0 +1,125 @@
+//
+//  PrefixHeader.pch
+//  AiJiaBao
+//
+//  Created by 医麦思 on 2017/2/20.
+//  Copyright © 2017年 nuhgroup. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Colours.h"
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "UIView+Extension.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "MBProgressHUD+Extension.h"
+#import "UIView+AiJiaBao.h"
+
+#import "JSONModels.h"
+#import "AJBCommon.h"
+#import "UIButton+TQEasyIcon.h"
+#import "AJBSDWebImageView.h"
+#import "AJBBaseService.h"
+#import "BaseAPIList.h"
+#import "AJBUserDefaults.h"
+
+#import <AliyunOSSiOS/OSSService.h>
+#import <UMSocialCore/UMSocialCore.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+/*
+ app key
+ */
+#define UmSocialAppkey @"58c0d45b07fe652e8f001721"
+#define WXAppId @"wx508431454cf340d1"    //微信开放平台
+#define WXSecret @"7836d628efe6a781fa3b57c979fd5c3f"
+
+/*
+    screen bounds
+ */
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define NAVITETION_HEIGHT 64
+#define STATEBAR_HEIGHT 20
+#define TABBAR_HEIGHT 64
+
+#define ScreenSize [UIScreen mainScreen].bounds.size
+#define kThumbnailLength    ([UIScreen mainScreen].bounds.size.width - 5*5)/4
+#define kThumbnailSize      CGSizeMake(kThumbnailLength, kThumbnailLength)
+#define DistanceFromTopGuiden(view) (view.frame.origin.y + view.frame.size.height)
+#define DistanceFromLeftGuiden(view) (view.frame.origin.x + view.frame.size.width)
+#define ViewOrigin(view)   (view.frame.origin)
+#define ViewSize(view)  (view.frame.size)
+/*
+    font 字体
+ */
+#define FONT_OF_SIZE_17 [UIFont systemFontOfSize:17]
+#define FONT_OF_SIZE_16 [UIFont systemFontOfSize:16]
+#define FONT_OF_SIZE_15 [UIFont systemFontOfSize:15]
+#define FONT_OF_SIZE_14 [UIFont systemFontOfSize:14]
+#define FONT_OF_SIZE_13 [UIFont systemFontOfSize:13]
+#define FONT_OF_SIZE_12 [UIFont systemFontOfSize:12]
+#define FONT_OF_SIZE_10 [UIFont systemFontOfSize:10]
+
+
+/*
+    颜色
+ */
+#define COLOR_UI_54C1F5 [UIColor colorFromHexString:@"54C1F5"] //主色
+#define COLOR_UI_29cd94 [UIColor colorFromHexString:@"29cd94"] //辅助色
+#define COLOR_UI_ff9800 [UIColor colorFromHexString:@"ff9800"]  //辅助色
+#define COLOR_UI_ff7878 [UIColor colorFromHexString:@"ff7878"]  //辅助色
+#define COLOR_UI_f5c212 [UIColor colorFromHexString:@"f5c212"]  //辅助色
+
+#define COLOR_UI_63e9fc [UIColor colorFromHexString:@"63e9fc"]  //辅助色
+#define COLOR_UI_d5d5d5 [UIColor colorFromHexString:@"d5d5d5"]  //辅助色
+
+#define COLOR_UI_333333 [UIColor colorFromHexString:@"333333"]  //字体色
+#define COLOR_UI_666666 [UIColor colorFromHexString:@"666666"]  //字体色
+#define COLOR_UI_888888 [UIColor colorFromHexString:@"888888"]  //字体色
+#define COLOR_UI_cacaca [UIColor colorFromHexString:@"cacaca"]  //字体色
+#define COLOR_UI_dddddd [UIColor colorFromHexString:@"dddddd"]  //字体色
+#define COLOR_UI_f1f1f1 [UIColor colorFromHexString:@"f1f1f1"]  //字体色
+
+#define COLOR_UI_efeff4 [UIColor colorFromHexString:@"efeff4"]  
+#define COLOR_UI_00cb8e [UIColor colorFromHexString:@"00cb8e"]
+
+#define COLOR_UI_RANDOM [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:0.8]
+
+#define RGB(R,G,B,A) [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:A]
+
+#define FamilyDefaultTextColoe [UIColor colorWithRed:91.0/255.0 green:196.0/255.0 blue:243.0/255.0 alpha:1]
+
+/*
+    local image
+ */
+#define imageNamed(str) [UIImage imageNamed:[NSString stringWithFormat:@"skin_needed.bundle/image/%@",str]]
+
+/*
+    String
+ */
+#define SAFE_STR(str) ((str) == nil?@"":str)
+#define IS_STR_EMPTY(str) ((str == nil || [str length]<1 || [str isKindOfClass:[NSNull class]]) ? YES : NO )
+
+
+/*
+    margin
+ */
+#define MARGIN_1 1
+#define MARGIN_5 5
+#define MARGIN_10 10
+#define MARGIN_11 11
+#define MARGIN_15 15
+#define MARGIN_20 20
+#define MARGIN_25 25
+#define MARGIN_30 30
+#define MARGIN_40 40
+
+#endif /* PrefixHeader_pch */

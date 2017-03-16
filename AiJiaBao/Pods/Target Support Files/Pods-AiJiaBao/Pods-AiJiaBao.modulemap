@@ -1,0 +1,6 @@
+framework module Pods_AiJiaBao {
+  umbrella header "Pods-AiJiaBao-umbrella.h"
+
+  export *
+  module * { export * }
+}
